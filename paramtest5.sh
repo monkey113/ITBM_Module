@@ -14,10 +14,13 @@ if [ $# -eq 0 ]; then
 	exit 1
 fi
 
+echo ""
+echo "===== $(basename $0) ====="
+echo ""
 echo "Parameter Count: $paramCnt"
 echo ""
 while [ $paramCnt -gt 0 ]; do
-	echo "Parameter $actualParam: $1"
+	echo "Parameter $actualParam:	$1"
 	shift
 	let actualParam++
 	let paramCnt--
