@@ -6,7 +6,7 @@
 # Date:		20210812 
 # ================================== 
 
-exec 2>/dev/null
+#exec 2>/dev/null
 
 className=${className:-"Kurs"}
 dirLevels=${dirLevels:-"3"}
@@ -15,10 +15,11 @@ if [[ -n $1 ]]; then
 	className=$1
 fi
 
-if [[ -n $2 -a ! $2 -eq $2 ]]; then
+if [ -n $2 -a $2 -eq $2 ]; then
 	echo "Levels: $2"
+	dirLevels=$2
 else
-	echo "Subdirecotry levels no specified, using default of 3"
+	echo "Subdirecotry levels not specified, using default of 3"
 fi
 
 
