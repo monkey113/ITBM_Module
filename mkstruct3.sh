@@ -6,7 +6,7 @@
 # Date:		20210812 
 # ================================== 
 
-#exec 2>/dev/null
+exec 2>/dev/null
 
 className=${className:-"Kurs"}
 dirLevels=${dirLevels:-"3"}
