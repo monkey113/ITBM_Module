@@ -18,7 +18,7 @@ echo "# Name:		$1" >> $filename
 echo "# Description:	$2" >> $filename
 echo "# Autor:	$3" >> $filename
 echo "# Version:	$4" >> $filename
-echo "# Date:	$(date +"%Y%m%d") " >> $filename
+echo "# Date:		$(date +"%Y%m%d") " >> $filename
 echo "# ================================== " >> $filename
 # I'm just a Comment...
 
