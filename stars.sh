@@ -7,7 +7,6 @@
 # ================================== 
 
 amntStars=$1
-stars=
 
 if [ -z $1 ] || ! [ $1 -eq $1 ] 2>/dev/null; then
 	echo "Usage: $(basename $0) [desired amount of stars (integer)]"
