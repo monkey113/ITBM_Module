@@ -2,7 +2,7 @@
 # Name:		minigrep1
 # Description:	Searches a file for the user defined words ($1+) and outputs the respective lines.
 # Author:	Ivan Brunner
-# Version:	2.0
+# Version:	1.0
 # Date:		20210818
 # ================================== 
 textfile=$1
