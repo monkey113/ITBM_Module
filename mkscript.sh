@@ -65,7 +65,7 @@ echo ""
 else
 	if [[ -e $filename ]]; then # check for mode where $1-4 is defined when executed. In interactive mode, this is tested "on the go"
 		echo "File already exists. Enter a new filename."
-		exit 2
+		exit 1
 	else # if the test is passed, the variabled get assigned with their correspondign values (see Usage)
 		filename=$1
 		descr=$2
@@ -102,3 +102,5 @@ echo "$line5Final" >> $filename.sh
 echo "$line6Final" >> $filename.sh
 echo "$line7Final" >> $filename.sh
 echo "" >> $filename.sh
+
+chmod +x $filename.sh
