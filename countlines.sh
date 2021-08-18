@@ -16,7 +16,8 @@ fi
 
 while read zeile; do
 	let counter++
-	echo "$counter	$zeile"
+	#echo "$counter	$zeile"
+	printf "%4s %s\n" ${counter} " ${zeile}"
 done < $textfile
 
-echo "$1: Read $counter lines"
+printf "\n  $1: Read $counter lines\n\n"
